@@ -1,6 +1,6 @@
 class Dzivnieks:
     def __init__(self, vards, kajas):
-        self.name=vards
+        self.vards=vards
         self.kajas=kajas
     def skanja(self):
         print("random animal noise")
@@ -9,7 +9,7 @@ class Dzivnieks:
 
 class Suns(Dzivnieks):
     def __init__(self, vards, kajas):
-        super().__init__()
+        super().__init__(vards, kajas)
         self.vards="Komisars "+self.vards
 
 d1=Dzivnieks("Gauja", 4)
